@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/txtPatients"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/textview_style_directory"
+        android:ellipsize="start"
+        android:ems="2"
+        android:gravity="center"
+        android:maxLines="100"
+        android:scrollbars="vertical"
+        android:text="Patients"
+        android:textSize="32sp"
+        android:textStyle="bold" >
+
+        <requestFocus />
+    </TextView>
+
+    <ListView
+        android:id="@+id/list_Patients"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnCall"
+        android:layout_below="@+id/txtPatients" >
+    </ListView>
+
+    <ImageButton
+        android:id="@+id/btnCall"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/btn_green"
+        android:src="@drawable/call_video" />
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_red"
+        android:src="@drawable/home" />
+
+</RelativeLayout>

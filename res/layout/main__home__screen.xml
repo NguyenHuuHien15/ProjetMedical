@@ -1,0 +1,75 @@
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+
+    <TextView
+        android:id="@+id/editTextNote"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_style"
+        android:ellipsize="start"
+        android:ems="2"
+        android:inputType="textMultiLine"
+        android:maxLines="100"
+        android:scrollbars="vertical"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center_vertical" >
+
+        <requestFocus />
+    </TextView>
+
+    <Button
+        android:id="@+id/btnListenACall"
+        style="@style/ButtonText"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:background="@drawable/btn_green"
+        android:text="Écoute d'un appel en cours..." />
+
+    <ImageButton
+        android:id="@+id/btn_StartCallFunction"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:background="@drawable/btn_blue"
+        android:src="@drawable/call_video" />
+
+    <ImageButton
+        android:id="@+id/btn_Sms_Mail"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:background="@drawable/btn_blue" 
+        android:src="@drawable/courrier_2"
+        />
+
+     <ImageButton
+        android:id="@+id/btn_Apps"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:background="@drawable/btn_blue" 
+        android:src="@drawable/app_1"/>
+<!-- 
+    <ImageButton
+        android:id="@+id/btn_Function4"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:background="@drawable/btn_orange" />
+
+    <ImageButton
+        android:id="@+id/btn_Function5"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:background="@drawable/btn_orange" />
+        
+         -->
+
+</AbsoluteLayout>

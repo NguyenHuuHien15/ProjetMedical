@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pkg1.main_home_screen"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="16" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="pkg1.main_home_screen.Main_Home_Screen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="pkg2.directory.Directory"
+            android:label="Directory" >
+            <intent-filter>
+                <action android:name="pkg2.directory.Directory" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="pkg3.view_preview.Main_View_Preview"
+            android:label="View_Preview" >
+            <intent-filter>
+                <action android:name="pkg3.view_preview.Main_View_Preview" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="pkg3.view_preview.Main_View_Preview_AfterSendACall"
+            android:label="View_Preview" >
+            <intent-filter>
+                <action android:name="pkg3.view_preview.Main_View_Preview_AfterSendACall" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="pkg3.view_preview.Main_View_Preview_AfterReceiveACall"
+            android:label="View_Preview" >
+            <intent-filter>
+                <action android:name="pkg3.view_preview.Main_View_Preview_AfterReceiveACall" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="pkg2_2.mail_sms.Main_Chat"
+            android:label="SMS" >
+            <intent-filter>
+                <action android:name="pkg2_2.mail_sms.Main_Chat" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name="pkg2_3.apps.music.AndroidBuildingMusicPlayerActivity"
+            android:label="MUSIQUE" >
+            <intent-filter>
+                <action android:name="pkg2_3.apps.music.AndroidBuildingMusicPlayerActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name="pkg2_3.apps.music.Directory"
+            android:label="Répertoires musiques" >
+            <intent-filter>
+                <action android:name="pkg2_3.apps.music.Directory" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name="pkg2_3.apps.music.PlayListActivity"
+            android:label="Listes de la musique" >
+            <intent-filter>
+                <action android:name="pkg2_3.apps.music.PlayListActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission." >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+</manifest>
